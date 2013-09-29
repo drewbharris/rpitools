@@ -14,11 +14,14 @@ int main (void)
   pullUpDnControl(7, PUD_DOWN);
 
   digitalWrite(ledPin, 0);
-
+  
   for (;;)
   {
     int readVal = digitalRead(switchPin);
     if (readVal == 1){
+      
+      // blink a bunch of times to show that we're going to shutdown
+      
       digitalWrite(ledPin, 1);
       delay(200);
       digitalWrite(ledPin, 0);
