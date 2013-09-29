@@ -4,7 +4,7 @@
 int main (void)
 {
   int switchPin = 7;
-  int switchPin = 0;
+  int ledPin = 0;
 
   if (wiringPiSetup () == -1)
     return 1;
@@ -38,5 +38,5 @@ int main (void)
     }
     delay(200);
   }
-  return 0 ;
+  return 0;
 }
